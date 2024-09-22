@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <main class="flex justify-center my-28">
         <div class="mockup-phone">
             <div class="camera"></div>
@@ -27,12 +26,12 @@
                     <div class="divider"></div>
                     <!-- user action button -->
                     <div>
-                        <button class="btn btn-lg">Add Money</button>
-                        <button class="btn btn-lg">Cash Out</button>
+                        <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
+                        <button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
                     </div>
                     <div class="divider"></div>
                     <!-- add money form start -->
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
@@ -54,13 +53,13 @@
                       </div>
                      <!-- add money form end -->
                       <!-- cash out start -->
-                      <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                      <div id="cash-out-form" class="  hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                           <div class="form-control">
                             <label class="label">
                               <span  class="label-text">Amount</span>
                             </label>
-                            <input id="input-cash-out" type="text" placeholder="amount" class="input input-bordered" required />
+                            <input id="input-cash-out" type="text" placeholder="Cash Out Amount" class="input input-bordered" required />
                           </div>
                           <div class="form-control">
                             <label class="label">
@@ -81,6 +80,8 @@
     </main>
     <!-- <script src="js/home.js"></script> -->
      <script src="js/addmoney.js"></script>
+     <script src="js/cash-out.js"></script>
+     <script src="js/features.js"></script>
 </body>
 
 </html>
